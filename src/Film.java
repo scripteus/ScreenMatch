@@ -1,29 +1,27 @@
 public class Film {
-    String title;
-    String genre;
-    double rating;
-    int releaseYear;
-    int durationInHours;
 
-    Film filmOne() {
-        Film topGun = new Film(); // Create a instance of the Film class
-        topGun.title = "Top Gun: Maverick";
-        topGun.genre = "Action";
-        topGun.rating = 8.3;
-        topGun.releaseYear = 2022;
-        topGun.durationInHours = 2;
-        return topGun;
+    String name;
+    int releaseYear;
+    int durationInMinutes;
+    boolean includedInPlan;
+    double sumOfRatings;
+    double totalRatings;
+
+    void submitRate (double rate) {
+        sumOfRatings += rate;
+        totalRatings ++;
     }
 
-    Film filmTwo() {
-        Film interstellar = new Film();
-        interstellar.title = "Interstellar";
-        interstellar.genre = "Sci-Fi";
-        interstellar.rating = 8.6;
-        interstellar.releaseYear = 2014;
-        interstellar.durationInHours = 2;
-        return interstellar;
+    void getAverageRate () {
+        this.totalRatings = this.sumOfRatings / 3;
+    }
+
+    void showTechnicalSheet () {
+        System.out.println("Name of the film: " + name);
+        System.out.println("Release year: " + releaseYear);
+        System.out.println("Duration: " + durationInMinutes + " min");
+        System.out.println("Included in plan: " + includedInPlan);
+        System.out.printf("Sum of rating: %.2f\n", sumOfRatings);
+        System.out.printf("Total rating: %.2f\n", totalRatings);
     }
 }
-
-
