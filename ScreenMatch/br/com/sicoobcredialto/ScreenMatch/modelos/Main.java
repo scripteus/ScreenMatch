@@ -1,8 +1,8 @@
-import br.com.sicoobcredialto.ScreenMatch.modelos.Film;
+import br.com.sicoobcredialto.ScreenMatch.modelos.Titulo;
 
 public static void main () {
 
-    Film sheetFilms = new Film();
+    Titulo sheetFilms = new Titulo();
     sheetFilms.setName("Top Gun: Maverick");
     sheetFilms.setReleaseYear(2023);
     sheetFilms.setDurationInMinutes(240);

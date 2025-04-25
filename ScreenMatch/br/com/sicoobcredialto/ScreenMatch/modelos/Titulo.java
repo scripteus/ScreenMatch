@@ -1,6 +1,6 @@
 package br.com.sicoobcredialto.ScreenMatch.modelos;
 
-public class Film {
+public class Titulo {
 
     private String name;
     private int releaseYear;
