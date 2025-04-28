@@ -1,6 +1,6 @@
 package br.com.sicoobcredialto.ScreenMatch.modelos;
 
-public class Filme extends Titulo {
+public class Filme extends Synopse {
 
     private String director;
 

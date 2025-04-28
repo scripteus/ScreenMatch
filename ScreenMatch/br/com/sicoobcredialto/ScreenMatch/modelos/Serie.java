@@ -1,6 +1,6 @@
 package br.com.sicoobcredialto.ScreenMatch.modelos;
 
-public class Serie extends Titulo {
+public class Serie extends Synopse {
     private String series;
     private int seasons;
     private int episodes;
