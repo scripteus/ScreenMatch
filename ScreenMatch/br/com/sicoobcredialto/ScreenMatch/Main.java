@@ -38,10 +38,10 @@ public static void main () {
 
     // film1.getAverageRate(); // sum a average
     // film1.showTechnicalSheet(); // print everything
-
     System.out.println("------------------------------------");
     System.out.println(STR."Name of the film: \{film1.getName()}");
     System.out.println(STR."Release year: \{film1.getReleaseYear()}");
     System.out.println(STR."Duration in hours: \{tempo.getHours()}");
     System.out.println("------------------------------------");
+
 }
