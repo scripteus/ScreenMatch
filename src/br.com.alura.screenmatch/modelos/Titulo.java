@@ -45,8 +45,8 @@ public class Titulo {
     }
 
     public void exibeFichaTecnica(){
-        System.out.println("Nome do filme: " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        System.out.println(STR. "Nome do filme: \{nome}");
+        System.out.println(STR. "Ano de lançamento: \{anoDeLancamento}");
     }
 
     public void avalia(double nota){
@@ -57,4 +57,9 @@ public class Titulo {
     public double pegaMedia(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
+
+//    @Override
+//    public String toString() {
+//        return STR. "Titulo: \{getNome()}\nAno de Lançamento: \{getAnoDeLancamento()}";
+//    }
 }
