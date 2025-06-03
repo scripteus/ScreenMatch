@@ -5,6 +5,8 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -28,7 +30,16 @@ public class PrincipalComListas {
             if (item instanceof  Filme filme && filme.getClassificacao() > 2) {
                 System.out.println("Classificação " + filme.getClassificacao());
             }
-
         }
+
+        ArrayList<String> buscaPorAtores = new  ArrayList<>();
+        buscaPorAtores.add("Nicole Kidman");
+        buscaPorAtores.add("Tom Cruise");
+        buscaPorAtores.add("Robert Pattison");
+        System.out.println(buscaPorAtores);
+        Collections.sort(buscaPorAtores);
+        System.out.println(buscaPorAtores);
+        System.out.println(lista);
+
     }
 }
