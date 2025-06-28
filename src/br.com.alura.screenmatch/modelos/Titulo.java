@@ -8,6 +8,12 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -58,8 +64,8 @@ public class Titulo {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
-//    @Override
-//    public String toString() {
-//        return STR. "Titulo: \{getNome()}\nAno de Lançamento: \{getAnoDeLancamento()}";
-//    }
+    @Override
+    public String toString() {
+        return STR. "Titulo: \{getNome()}\nAno de Lançamento: \{getAnoDeLancamento()}";
+    }
 }
